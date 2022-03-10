@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/gopay"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/blue_50"
+    app:shapeAppearance="@style/ShapeAppearance.Gojek.MediumComponent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_margin="@dimen/margin_padding_size_small"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/gopay_balance"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="@color/white"
+            app:shapeAppearance="@style/ShapeAppearance.Gojek.SmallComponent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_margin="@dimen/margin_padding_size_small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image_icon_gopay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_text_gopay"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp109.048"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_micro"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/image_icon_gopay" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap for history"
+                    android:textColor="@color/green_60"
+                    android:textSize="@dimen/text_size_micro"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:id="@+id/image_pay"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="@dimen/margin_padding_size_medium"
+            android:layout_marginEnd="@dimen/margin_padding_size_medium"
+            android:src="@drawable/icon_gopay_transfer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/gopay_balance"
+            app:layout_constraintTop_toTopOf="@+id/gopay_balance"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintVertical_bias="0.8"
+            app:layout_constraintBottom_toBottomOf="@+id/gopay_balance"
+            app:layout_constraintEnd_toEndOf="@+id/image_pay"
+            app:layout_constraintStart_toStartOf="@+id/image_pay"
+            app:layout_constraintTop_toTopOf="@+id/gopay_balance"/>
+
+        <ImageView
+            android:id="@+id/image_topup"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="@dimen/margin_padding_size_medium"
+            android:layout_marginEnd="@dimen/margin_padding_size_medium"
+            android:src="@drawable/icon_gopay_topup"
+            app:layout_constraintBottom_toBottomOf="@+id/image_pay"
+            app:layout_constraintEnd_toStartOf="@+id/image_request"
+            app:layout_constraintStart_toEndOf="@+id/image_pay"
+            app:layout_constraintTop_toTopOf="@+id/image_pay"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Up"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintVertical_bias="0.8"
+            app:layout_constraintBottom_toBottomOf="@+id/gopay_balance"
+            app:layout_constraintEnd_toEndOf="@+id/image_topup"
+            app:layout_constraintStart_toStartOf="@+id/image_topup"
+            app:layout_constraintTop_toTopOf="@+id/gopay_balance"/>
+
+        <ImageView
+            android:id="@+id/image_request"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="@dimen/margin_padding_size_medium"
+            android:layout_marginEnd="@dimen/margin_padding_size_medium"
+            android:src="@drawable/icon_gopay_request"
+            app:layout_constraintBottom_toBottomOf="@+id/image_topup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/image_topup"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintVertical_bias="0.8"
+            app:layout_constraintBottom_toBottomOf="@+id/gopay_balance"
+            app:layout_constraintEnd_toEndOf="@+id/image_request"
+            app:layout_constraintStart_toStartOf="@+id/image_request"
+            app:layout_constraintTop_toTopOf="@+id/gopay_balance"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

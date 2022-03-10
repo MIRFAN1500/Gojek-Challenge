@@ -12,6 +12,8 @@
         <item name="colorSurface">@color/gray_50</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Gojek.MediumComponent</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Gojek.SmallComponent</item>
         <!-- Customize your theme here. -->
     </style>
     <style name="Theme.Gojek" parent="Base.Theme.Gojek"/>
