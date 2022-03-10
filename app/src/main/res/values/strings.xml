@@ -4,4 +4,8 @@
     <string name="title_promo">Promo</string>
     <string name="title_orders">Orders</string>
     <string name="title_chat">Chat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_hint">Find Services, Food, or Places</string>
+    <string name="image_description_account">Image Button of Account</string>
 </resources>
