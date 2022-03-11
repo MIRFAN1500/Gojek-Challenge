@@ -16,4 +16,10 @@
     <color name="green_60">#00a713</color>
     <color name="blue_50">#0081a0</color>
     <color name="blue_80">#114D96</color>
+
+    <color name="system_ui_scrim_light">#E3ffffff</color>
+    <color name="system_ui_scrim_dark">#C3000000</color>
+
+    <color name="status_bar_scrim">@color/system_ui_scrim_light</color>
+    <color name="nav_bar_scrim">@color/system_ui_scrim_light</color>
 </resources>

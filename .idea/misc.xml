@@ -11,6 +11,18 @@
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/GojekChallenge/app/src/main/res/layout/gopay_widget_layout.xml" value="0.15601851851851853" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/GojekChallenge/app/src/main/res/layout/item_menu.xml" value="0.4466666666666667" />
         <entry key="..\:/Users/lenovo/AndroidStudioProjects/GojekChallenge/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17552083333333332" />
+        <entry key="app/src/main/res/drawable/icon_go_gocar.xml" value="0.19" />
+        <entry key="app/src/main/res/drawable/icon_splash_screen.xml" value="0.19" />
+        <entry key="app/src/main/res/drawable/splash_inset.xml" value="0.19" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/appbar_layout.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_orders.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/layout/fragment_promos.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/layout/gopay_widget_layout.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/layout/item_menu.xml" value="0.18177083333333333" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.18177083333333333" />
       </map>
     </option>
   </component>

@@ -136,7 +136,6 @@
             app:layout_constraintStart_toStartOf="@+id/image_request"
             app:layout_constraintTop_toTopOf="@+id/gopay_balance"/>
 
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>
