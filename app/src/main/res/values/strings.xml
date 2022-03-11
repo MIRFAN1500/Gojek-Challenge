@@ -17,4 +17,5 @@
     <string name="gosend_gridview">GoSend</string>
     <string name="gopaylater_gridview">GoPayLater</string>
     <string name="more_gridview">More</string>
+    <string name="quick_actions">Quick actions</string>
 </resources>

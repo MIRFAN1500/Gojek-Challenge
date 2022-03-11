@@ -99,13 +99,117 @@
 
                     <ImageView
                         android:id="@+id/imageView2"
-                        android:layout_width="15dp"
-                        android:layout_height="15dp"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
                         android:layout_marginEnd="@dimen/margin_padding_size_medium"
                         android:src="@drawable/ic_baseline_arrow_forward_ios_24"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/text_quick_actions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quick_actions"
+                style="@style/TextAppearance.Material3.TitleLarge"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/margin_padding_size_large"
+                android:layout_marginStart="@dimen/margin_padding_size_medium"
+                android:layout_marginEnd="@dimen/margin_padding_size_medium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/treasure_card" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/quick_actions"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="@dimen/margin_padding_size_large"
+                android:layout_marginStart="@dimen/margin_padding_size_medium"
+                android:layout_marginEnd="@dimen/margin_padding_size_medium"
+                app:cardBackgroundColor="@color/white"
+                app:cardElevation="2dp"
+                app:shapeAppearance="?attr/shapeAppearanceMediumComponent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_quick_actions">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/goride_quick_action"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="@dimen/margin_padding_size_medium"
+                        android:src="@drawable/goride"
+                        app:layout_constraintBottom_toTopOf="@+id/materialDivider"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/destination_text"
+                        style="@style/TextAppearance.Material3.LabelMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_padding_size_medium"
+                        android:text="Binar Academy"
+                        app:layout_constraintBottom_toBottomOf="@+id/goride_quick_action"
+                        app:layout_constraintStart_toEndOf="@+id/goride_quick_action"
+                        app:layout_constraintTop_toTopOf="@+id/goride_quick_action" />
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:layout_marginEnd="@dimen/margin_padding_size_medium"
+                        app:layout_constraintBottom_toTopOf="@+id/materialDivider"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:id="@+id/materialDivider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/promo_quick_actions"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_promo2_colored"
+                        android:layout_marginStart="@dimen/margin_padding_size_medium"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/materialDivider" />
+
+                    <TextView
+                        android:id="@+id/vouchers_text"
+                        style="@style/TextAppearance.Material3.LabelMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_padding_size_medium"
+                        android:text="10 vouchers expiring soon"
+                        app:layout_constraintBottom_toBottomOf="@+id/promo_quick_actions"
+                        app:layout_constraintStart_toEndOf="@+id/promo_quick_actions"
+                        app:layout_constraintTop_toTopOf="@+id/promo_quick_actions" />
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        android:layout_marginEnd="@dimen/margin_padding_size_medium"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/materialDivider" />
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -122,7 +226,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/treasure_card"
+                app:layout_constraintTop_toBottomOf="@+id/quick_actions"
                 app:shapeAppearance="@style/ShapeAppearance.Gojek.MediumComponent">
 
                 <androidx.appcompat.widget.LinearLayoutCompat
