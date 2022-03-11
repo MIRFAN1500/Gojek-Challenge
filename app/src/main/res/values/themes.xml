@@ -5,21 +5,43 @@
         <item name="colorPrimary">@color/green_80</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
+
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <item name="colorSurface">@color/gray_50</item>
-        <!-- Status bar color. -->
+
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
-        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Gojek.MediumComponent</item>
+        <item name="android:navigationBarColor">@color/nav_bar_scrim</item>
+
         <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Gojek.SmallComponent</item>
-        <!-- Customize your theme here. -->
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Gojek.MediumComponent</item>
     </style>
+
     <style name="Theme.Gojek" parent="Base.Theme.Gojek"/>
 
     <style name="Theme.Gojek.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Gojek.Starting" parent="Theme.SplashScreen">
+        // Set the splash screen background, animated icon, and animation duration.
+        <item name="windowSplashScreenBackground">@color/white</item>
+
+        // Use windowSplashScreenAnimatedIcon to add either a drawable or an
+        // animated drawable. One of these is required.
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_inset</item>
+        <item name="windowSplashScreenAnimationDuration">200</item>  # Required for
+        # animated icons
+
+        // Set the theme of the Activity that directly follows your splash screen.
+        <item name="postSplashScreenTheme">@style/Theme.Gojek.NoActionBar</item>  # Required.
+
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
     </style>
 </resources>

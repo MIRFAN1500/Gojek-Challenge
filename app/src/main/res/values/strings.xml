@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Gojek Challenge</string>
     <string name="title_home">Home</string>
-    <string name="title_promo">Promo</string>
+    <string name="title_promo">Promos</string>
     <string name="title_orders">Orders</string>
     <string name="title_chat">Chat</string>
     <!-- TODO: Remove or change this placeholder text -->

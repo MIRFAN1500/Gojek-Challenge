@@ -1,14 +1,11 @@
-package com.binar.gojekchallenge
+package com.binar.gojekchallenge.ui.home
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.ViewParent
 import android.widget.BaseAdapter
-import androidx.recyclerview.widget.RecyclerView
 import com.binar.gojekchallenge.databinding.ItemMenuBinding
 import com.binar.gojekchallenge.model.Menu
-import java.text.FieldPosition
 
 class MenuAdapter(private var onItemClick: (Menu) -> Unit) : BaseAdapter() {
     private var listData = ArrayList<Menu>()

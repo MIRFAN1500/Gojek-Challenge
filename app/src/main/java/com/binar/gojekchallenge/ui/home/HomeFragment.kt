@@ -1,4 +1,4 @@
-package com.binar.gojekchallenge
+package com.binar.gojekchallenge.ui.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.GridView
+import com.binar.gojekchallenge.R
 import com.binar.gojekchallenge.databinding.FragmentHomeBinding
 import com.binar.gojekchallenge.model.Menu
 import com.binar.gojekchallenge.utility.toast
@@ -54,5 +55,8 @@ class HomeFragment : Fragment() {
         )
     }
 
-
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
 }
